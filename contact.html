@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="layout.css">
+        <title>Contact</title>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="contact.html">Contact</a>
+            <a href="links.html">Links</a>
+            <a href="photos.html">Photos</a>
+            </nav>
+        </div>
+
+        <section>
+            <form action="/contact.php" method="post">
+                <fieldset>
+                    <legend class="contact">Contact</legend>
+
+                        <div class="input-container">
+                            <input type="text" id="firstName" name="first_name">
+                            <label for="firstName" class="first">First Name</label>
+
+                        </div>
+
+                        <div class="input-container">
+                            <input type="text" id="lastName" name="last_name">
+                            <label for="lastName" class="last">Last name</label>
+
+                        </div>
+
+                        <div class="input-container">
+                            <input type="email" id="email" name="email_address">
+                            <label for="email">Email</label>
+
+                        </div>
+
+                        <div class="input-container">
+                            <textarea id="comments" name="comments"></textarea>
+                            <label for="comments">Comments</label>
+
+                        </div>
+
+                        <div class="input-container inline">
+                            <label style="font-size:1em" for="conditions">Agree to Terms and Conditions?</label>
+                            <input style=width:10% type="checkbox" id="conditions" name="conditions" value="agree">
+                        </div>
+                    <div class="flex">
+                        <div class="input-container">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </body>
+</html>
